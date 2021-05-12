@@ -17,7 +17,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 ## Features
 
-- ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
+- ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite), [Yarn](https://yarnpkg.com/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
 
 - 🗂 [File based routing](./src/pages)
 
@@ -75,7 +75,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 - [TypeScript](https://www.typescriptlang.org/)
   - [Vue TypeScript Plugin](https://github.com/znck/vue-developer-experience/tree/master/packages/typescript-plugin-vue) - better type support for Vue
-- [pnpm](https://pnpm.js.org/) - fast, disk space efficient package manager
+- [Yarn](https://yarnpkg.com/) - package manager
 - [vite-ssg](https://github.com/antfu/vite-ssg) - Server-side generation
 - [Netlify](https://www.netlify.com/) - deploy
 - [VS Code Extensions](./.vscode/extensions.json)
@@ -95,16 +95,16 @@ As this template is strongly opinionated, the following provides a curated list 
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/antfu/vitesse/generate).
+[Create a repo from this template on GitHub](https://github.com/ycs77/vitesse/generate).
 
 ### Clone to local
 
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx degit antfu/vitesse my-vitesse-app
+npx degit ycs77/vitesse my-vitesse-app
 cd my-vitesse-app
-pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
+yarn # If you don't have yarn installed, run: npm install -g yarn
 ```
 
 ## Checklist
@@ -127,7 +127,7 @@ And, enjoy :)
 Just run and visit http://localhost:3333
 
 ```bash
-pnpm dev
+yarn dev
 ```
 
 ### Build
@@ -135,7 +135,7 @@ pnpm dev
 To build the App, run
 
 ```bash
-pnpm build
+yarn build
 ```
 
 And you will see the generated file in `dist` that ready to be served.
