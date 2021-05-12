@@ -41,7 +41,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 - 🦾 TypeScript, of course
 
-- ☁️ Deploy on Netlify, zero-config
+- ☁️ Deploy on Vercel, zero-config
 
 <br>
 
@@ -83,7 +83,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 - [TypeScript](https://www.typescriptlang.org/)
 - [Yarn](https://yarnpkg.com/) - package manager
 - [`vite-ssg`](https://github.com/antfu/vite-ssg) - Server-side generation
-- [Netlify](https://www.netlify.com/) - zero-config deployment
+- [Vercel](https://vercel.com/) - zero-config deployment
 - [VS Code Extensions](./.vscode/extensions.json)
   - [Vite](https://marketplace.visualstudio.com/items?itemName=antfu.vite) - Fire up Vite server automatically
   - [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) - Vue 3 `<script setup>` IDE support
@@ -149,9 +149,9 @@ yarn build
 
 And you will see the generated file in `dist` that ready to be served.
 
-### Deploy on Netlify
+### Deploy on Vercel
 
-Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along the way, and your App will be live in a minute.
+Go to [Vercel](https://vercel.com/new) and select your clone, `OK` along the way, and your App will be live in a minute.
 
 ## Why
 
