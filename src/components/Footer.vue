@@ -1,10 +1,23 @@
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+import { isDark, toggleDark } from '~/logic'
+
+const { t, availableLocales, locale } = useI18n()
+
+const toggleLocales = () => {
+  // change to some real logic
+  const locales = availableLocales
+  locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]
+}
+</script>
+
 <template>
   <nav class="text-xl mt-6">
     <router-link class="icon-btn mx-2" to="/" :title="t('button.home')">
       <carbon-campsite />
     </router-link>
 
-    <a class="icon-btn mx-2" :title="t('button.toggle_dark')" @click="isDark = !isDark">
+    <a class="icon-btn mx-2" :title="t('button.toggle_dark')" @click="toggleDark">
       <carbon-moon v-if="isDark" />
       <carbon-sun v-else />
     </a>
@@ -22,18 +35,3 @@
     </a>
   </nav>
 </template>
-
-<script setup lang='ts'>
-import { useI18n } from 'vue-i18n'
-import { locales } from '/~/messages'
-import { isDark } from '/~/logics'
-
-const i18n = useI18n()
-
-const toggleLocales = () => {
-  // change to some real logic
-  i18n.locale.value = locales[(locales.indexOf(i18n.locale.value) + 1) % locales.length]
-}
-
-const t = i18n.t
-</script>

@@ -1,10 +1,10 @@
 <p align='center'>
-  <img src='https://repository-images.githubusercontent.com/286295150/b1b1be80-354a-11eb-87c0-5dc96cae2bd9' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
+  <img src='https://user-images.githubusercontent.com/11247099/111864893-a457fd00-899e-11eb-9f05-f4b88987541d.png' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
 </p>
 
 <p align='center'>
 Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
-<sub><em>Now with Vite 2.0! ⚡️</em></sub>
+<sub><em>Now with <a href="http://windicss.netlify.app/">Windi CSS</a>! ⚡️</em></sub>
 </p>
 
 <br>
@@ -23,13 +23,15 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 - 📦 [Components auto importing](./src/components)
 
+- 📑 [Layout system](./src/layouts)
+
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 
-- 🎨 [TailwindCSS **v2.0**](https://blog.tailwindcss.com/tailwindcss-v2) with dark mode out-of-box
+- 🎨 [Windi CSS](https://github.com/windicss/windicss) - next generation utility-first CSS framework
 
 - 😃 [Use icons from any icon sets, with no compromise](./src/components)
 
-- 🌍 [i18n ready](./locales)
+- 🌍 [I18n ready](./locales)
 
 - 🗒 [Markdown Support](https://github.com/antfu/vite-plugin-md)
 
@@ -47,49 +49,56 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 ### UI Frameworks
 
-- [Tailwind CSS](https://tailwindcss.com/) - with built-in dark mode!
-- [Tailwind Typography](https://github.com/tailwindlabs/tailwindcss-typography) - Typography for Tailwind
+- [Windi CSS](https://github.com/windicss/windicss) (On-demand [TailwindCSS](https://tailwindcss.com/)) - lighter and faster, with a bundle additional features!
+  - [Windi CSS Typography](https://windicss.netlify.app/guide/plugins.html#typography) - similar to [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typograph) but for Windi CSS
 
 ### Icons
 
 - [Iconify](https://iconify.design) - use icons from any icon sets [🔍Icônes](https://icones.netlify.app/)
-- [vite-plugin-icons](https://github.com/antfu/vite-plugin-icons) - icons as Vue components
+- [`vite-plugin-icons`](https://github.com/antfu/vite-plugin-icons) - icons as Vue components
 
 ### Plugins
 
 - [Vue Router](https://github.com/vuejs/vue-router)
-  - [vite-plugin-voie](https://github.com/vamplate/vite-plugin-voie) - file system based routing
-- [vite-plugin-components](https://github.com/antfu/vite-plugin-components) - components auto import
-- [vite-plugin-pwa](https://github.com/antfu/vite-plugin-pwa) - PWA
-- [vite-plugin-md](https://github.com/antfu/vite-plugin-md) - Markdown as components / components in Markdown
-  - [markdown-it-prism](https://github.com/jGleitz/markdown-it-prism) - [Prism](https://prismjs.com/) for syntax highlighting
-- [vue-i18n](https://github.com/intlify/vue-i18n-next) - internationalization
+  - [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages) - file system based routing
+  - [`vite-plugin-vue-layouts`](https://github.com/JohnCampionJr/vite-plugin-vue-layouts) - layouts for pages
+- [`vite-plugin-components`](https://github.com/antfu/vite-plugin-components) - components auto import
+- [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa) - PWA
+- [`vite-plugin-windicss`](https://github.com/antfu/vite-plugin-windicss) - WindiCSS support
+- [`vite-plugin-md`](https://github.com/antfu/vite-plugin-md) - Markdown as components / components in Markdown
+  - [`markdown-it-prism`](https://github.com/jGleitz/markdown-it-prism) - [Prism](https://prismjs.com/) for syntax highlighting
+  - [`prism-theme-vars`](https://github.com/antfu/prism-theme-vars) - customizable Prism.js theme using CSS variables
+- [Vue I18n](https://github.com/intlify/vue-i18n-next) - Internationalization
+  - [`vite-plugin-vue-i18n`](https://github.com/intlify/vite-plugin-vue-i18n) - Vite plugin for Vue I18n
 - [VueUse](https://github.com/antfu/vueuse) - collection of useful composition APIs
+- [`@vueuse/head`](https://github.com/vueuse/head) - manipulate document head reactively
 
 ### Coding Style
 
-- Use Composition API with [`<script setup>` SFC](https://github.com/vuejs/rfcs/pull/227)
-- [ESLint](https://eslint.org/) with [@antfu/eslint-config-vue](https://github.com/antfu/eslint-config), single quotes, no semi.
+- Use Composition API with [`<script setup>` SFC syntax](https://github.com/vuejs/rfcs/pull/227)
+- [ESLint](https://eslint.org/) with [@antfu/eslint-config](https://github.com/antfu/eslint-config), single quotes, no semi.
 
 ### Dev tools
 
 - [TypeScript](https://www.typescriptlang.org/)
-  - [Vue TypeScript Plugin](https://github.com/znck/vue-developer-experience/tree/master/packages/typescript-plugin-vue) - better type support for Vue
 - [Yarn](https://yarnpkg.com/) - package manager
-- [vite-ssg](https://github.com/antfu/vite-ssg) - Server-side generation
-- [Netlify](https://www.netlify.com/) - deploy
+- [`vite-ssg`](https://github.com/antfu/vite-ssg) - Server-side generation
+- [Netlify](https://www.netlify.com/) - zero-config deployment
 - [VS Code Extensions](./.vscode/extensions.json)
-  - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify)
-  - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=antfu.i18n-ally)
-  - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
-  - [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
+  - [Vite](https://marketplace.visualstudio.com/items?itemName=antfu.vite) - Fire up Vite server automatically
+  - [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) - Vue 3 `<script setup>` IDE support
+  - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) - Icon inline display and autocomplete
+  - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally) - All in one i18n support
+  - [Windi CSS Intellisense](https://marketplace.visualstudio.com/items?itemName=voorjaar.windicss-intellisense) - IDE support for Windi CSS
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 ## Variations
 
 As this template is strongly opinionated, the following provides a curated list for community maintained variations with different preferences and feature sets. Check them out as well. PR to add yours are also welcome!
 
-- [vitesse-lite](https://github.com/kn0wn/vitesse-lite) by [@kn0wn](https://github.com/kn0wn)
+- [vitesse-addons](https://github.com/JohnCampionJr/vitesse-addons) by [@johncampionjr](https://github.com/johncampionjr) - additional options for integrations, including [Prettier](https://prettier.io) and [Storybook](https://storybook.js.org)
+- [vitesse-ssr-template](https://github.com/frandiox/vitesse-ssr-template) by [@frandiox](https://github.com/frandiox) - Vitesse with SSR
+- [vitesse-nuxt](https://github.com/antfu/vitesse-nuxt) - Vitesse for Nuxt 2 (expiremental)
 
 ## Try it now!
 
@@ -113,7 +122,7 @@ When you use this template, try follow the checklist to update your info properl
 
 - [ ] Rename `name` field in `package.json`
 - [ ] Change the author name in `LICENSE`
-- [ ] Change the title in `index.html`
+- [ ] Change the title in `App.vue`
 - [ ] Change the favicon in `public`
 - [ ] Remove the `.github` folder which contains the funding info
 - [ ] Clean up the READMEs and remove routes
@@ -146,6 +155,6 @@ Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along
 
 ## Why
 
-I have created several Vite apps recently. Setting the configs up is kinda the bottleneck for me to make the ideas simply come true within a very short time. 
+I have created several Vite apps recently. Setting the configs up is kinda the bottleneck for me to make the ideas simply come true within a very short time.
 
 So I made this starter template for myself to create apps more easily, along with some good practices that I have learned from making those apps. It's strongly opinionated, but feel free to tweak it or even maintains your own forks. [(see community maintained variation forks)](#variations)
